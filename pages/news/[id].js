@@ -51,7 +51,7 @@ const Details = ({ news }) => {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>{news.title}</title>
         <meta name="keywords" content={news.title} />
         <meta property="og:title" content={news.title} />
@@ -59,11 +59,11 @@ const Details = ({ news }) => {
         <meta property="og:image" content={`https://admin.aliwehbedu.com${news.main_image}`} />
         <meta property="og:type" content="article" />
       </Head>
-    <div style={{direction: 'rtl'}} className={styles.container}>
-      <img src={`https://admin.aliwehbedu.com${news.main_image}`} alt={news.title} className={styles.newsImage} />
-      <h1>{news.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: news.content }}></div>
-    </div>
+      <div style={{ direction: 'rtl' }} className={styles.container}>
+        <img src={`https://admin.aliwehbedu.com${news.main_image}`} alt={news.title} className={styles.newsImage} />
+        <h1>{news.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: news.content }}></div>
+      </div>
     </>
   );
 }
