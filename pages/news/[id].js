@@ -62,7 +62,7 @@ const Details = ({ news }) => {
     <div style={{direction: 'rtl'}} className={styles.container}>
       <img src={`https://admin.aliwehbedu.com${news.main_image}`} alt={news.title} className={styles.newsImage} />
       <h1>{news.title}</h1>
-      <p dangerouslySetInnerHTML={{ __html: news.content }}></p>
+      <div dangerouslySetInnerHTML={{ __html: news.content }}></div>
     </div>
     </>
   );
